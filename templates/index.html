@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for ( 'static',filename='css/estilos.css')}}">
+</head>
+<body>
+    {% block body %}
+    <div align="center">
+        <img src="/static/images/monopoly.png">
+    <div class="contenedor-form">
+        <div class="formulario">
+            <h2 style="text-align: center;">Iniciar Sesión</h2>
+            <!--Inputs que se encuentran en funcionamiento con python para poder acceder al vinculo que permite entrar a jugar -->
+            <form action="" method="post">
+                <input type="text" placeholder="Usuario" name="Usuario" required>
+                <input type="password" placeholder="Contraseña" name="Contraseña" required>
+                <p>{{error}}</p>
+                <input type="submit" name="enviar" value="Iniciar Sesión">
+                <a href="registro" style="color: #fff"> Registrate</a>
+            </form>
+        </div>
+    </div>
+    </div>
+    {% endblock %}
+</body>
+</html>

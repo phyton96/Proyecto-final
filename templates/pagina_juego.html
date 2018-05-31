@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Juego</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for ( 'static',filename='css/estilos.css')}}">
+   </head>
+   <body background="/static/images/bg2.gif">
+    <div id="tablerot" align="center">
+            <div id="tableroi">     
+            <img src="/static/images/tablero.png" width="620px" >
+            </div>
+            <div id= "tablerop" >
+            <table width= "620px" height="620px" align="center">
+                <!-- FILA 1 -->
+                <tr>
+                <th width="32.5" height="62"></th>
+                <th width="6" height="62"></th>
+                <th width="24.5" height="62"></th>
+                <th width="23.5" height="62"></th>
+                <th width="24.5" height="62"></th>
+                <th width="24" height="62"></th>
+                <th width="24.5" height="62"></th>
+                <th width="24.5" height="62"></th>
+                <th width="24" height="62"></th>
+                <th width="24" height="62"></th>
+                <th width="23" height="62"></th>
+                <th width="6" height="62"></th>
+                <th width="31" height="62"></th>
+                </tr>
+                <!-- FILA 2 -->
+                <tr>
+                <th height="15"></th>
+                <th height="15"></th>
+                <th height="15"></th>
+                <th height="15"></th>
+                <th height="15"></th>
+                <th height="15"></th>
+                <th height="15"></th>
+                <th height="15"></th>
+                <th height="15"></th>
+                <th height="15"></th>
+                <th height="15"></th>
+                <th height="15"></th>
+                <th height="15"></th>
+                </tr>
+                <!-- FILA 3 -->
+                <tr>
+                <th height="49.5"></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th height="49.5"></th>
+                </tr>
+                <!-- FILA 4 -->
+                <tr>
+                <th height="48"></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th height="48"></th>
+                </tr>
+                <!-- FILA 5 -->
+                </tr>
+                <tr>
+                <th height="48"></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th height="48">
+                </th>
+                <!-- FILA 6 -->
+                <tr>
+                <th height="49"></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th height="49"></th>
+                </tr>
+                <!-- FILA 7 -->
+                <tr>
+                <th height="49"></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th height="49"></th>
+                </tr>
+                <!-- FILA 8 -->
+                <tr>
+                <th height="48"></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th height="48"></th>
+                </tr>
+                <!-- FILA 9 -->
+                <tr>
+                <th height="49"></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th height="49"></th>
+                </tr>
+                <!-- FILA 10 -->
+                <tr>
+                <th height="47"></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th height="47"></th>
+                </tr>
+                <!-- FILA 11 -->
+                <tr>
+                <th height="48.5"></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th height="48.5"></th>
+                </tr>
+                <!-- FILA 12 -->
+                <tr>
+                <th height="14.5"></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th height="14.5">
+                </th>
+                </tr>
+                <!-- FILA 13 -->
+                <tr>
+                <th height="64"></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th height="64"></th>
+                </tr>    
+            </table>
+        </div>
+        </div>
+    </div>
+
+    <form action="" method="post">
+        <input type="submit" style="background-color: gray;margin-left: 1000px;margin-top: 1px;" value="Tirar" name="Tirar"> 
+    </form>
+    Permite el salto de imagen de los dados con respecto al valor dado en los randoms
+    
+        {%if d1.dado1==1 %}
+            <img class="dado1" src="../static/images/1.png">
+        {%else%}
+            {%if d1.dado1==2 %}
+                <img class="dado1" src="../static/images/2.png">
+            {%else%}
+                {%if d1.dado1==3 %}
+                    <img class="dado1" src="../static/images/3.png">
+                {%else%}
+                    {%if d1.dado1==4 %}
+                        <img class="dado1" src="../static/images/4.png">
+                    {%else%}
+                        {%if d1.dado1==5 %}
+                            <img class="dado1" src="../static/images/5.png">
+                        {%else%}               
+                            {%if d1.dado1==6 %}
+                                <img class="dado1" src="../static/images/6.png">
+                            {%endif%}
+                        {%endif%}
+                    {%endif%}
+                {%endif%}
+            {%endif%}
+        {%endif%}
+
+        {%if d1.dado2==1 %}
+            <img class="dado2" src="../static/images/1.png">
+        {%else%}
+            {%if d1.dado2==2 %}
+                <img class="dado2" src="../static/images/2.png">
+            {%else%}
+                {%if d1.dado2==3 %}
+                    <img class="dado2" src="../static/images/3.png">
+                {%else%}
+                    {%if d1.dado2==4 %}
+                        <img class="dado2" src="../static/images/4.png">
+                    {%else%}
+                        {%if d1.dado2==5 %}
+                            <img class="dado2" src="../static/images/5.png">
+                        {%else%}               
+                            {%if d1.dado2==6 %}
+                                <img class="dado2" src="../static/images/6.png">
+                            {%endif%}
+                        {%endif%}
+                    {%endif%}
+                {%endif%}
+            {%endif%}
+        {%endif%}
+
+</body>
+</html>

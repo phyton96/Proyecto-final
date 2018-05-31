@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for ( 'static',filename='css/estilos.css')}}">
+</head>
+<body>
+    {% block body %}
+    <div align="center">
+        <img src="/static/images/monopoly.png">
+    <div class="contenedor-form">
+        <div class="formulario">
+            <h2 style="text-align: center;">Registro</h2>
+            <!--Inputs que se encuentran en funcionamiento con python para poder registrar los usuarios -->
+            <form action="" method="post">
+                <input type="text" placeholder="Usuario" name="Usuario" required>
+                <p> {{fallo}}</p>
+                <input type="password" placeholder="Contraseña" name="Contraseña" required>
+                <input type="submit" name="enviar" value="Registrarse">
+                <a href="http://127.0.0.1:5000" style="color: #fff"> Iniciar sesión</a>
+            </form>
+        </div>
+    </div>
+    </div>
+    {% endblock %}
+</body>
+</html>
